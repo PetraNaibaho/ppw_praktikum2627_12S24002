@@ -1,18 +1,19 @@
 <?php
 
-namespace Database\Inventaris;
+namespace Database\Factories;
 
-use Illuminate\Database\Eloquent\Inventaries\Inventaris;
+use App\Models\User;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Inventaries\Inventaris<\App\Models\User>
+ * @extends Factory<User>
  */
-class UserInventaris extends Inventaris
+class UserFactory extends Factory
 {
     /**
-     * The current password being used by the inventaris.
+     * The current password being used by the factory.
      */
     protected static ?string $password;
 
